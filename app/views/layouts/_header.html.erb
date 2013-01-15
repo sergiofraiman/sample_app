@@ -18,15 +18,11 @@
                 <li class="divider"></li>
                 <li>
                   <%= link_to "Logout", logout_path, method: "delete" %>
-                </li>
+  </li>
               </ul>
             </li>
           <% else %>
-<<<<<<< HEAD
-            <li><%= link_to "Login", login_path %></li>
-=======
-            <li><%= link_to "Login", cadastrar_path %></li>
->>>>>>> updating-users
+            <li><%= link_to "Sign in", cadastrar_path %></li>
           <% end %>
         </ul>
       </nav>
