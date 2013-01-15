@@ -7,7 +7,7 @@
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "Ajuda", ajuda_path %></li>
           <% if signed_in? %>
-            <li><%= link_to "Usuários", '#' %></li>
+            <li><%= link_to "Usuários", users_path %></li>
             <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 Minha Conta <b class="caret"></b>
@@ -22,7 +22,7 @@
               </ul>
             </li>
           <% else %>
-            <li><%= link_to "Sign in", cadastrar_path %></li>
+            <li><%= link_to "Login", cadastrar_path %></li>
           <% end %>
         </ul>
       </nav>
