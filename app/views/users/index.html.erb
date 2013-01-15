@@ -1,5 +1,5 @@
 ﻿<% provide(:title, 'All users') %>
-<h1>All users</h1>
+<h1>Todos os usuários</h1>
 
 <ul class="users">
   <% @users.each do |user| %>
@@ -9,3 +9,5 @@
     </li>
   <% end %>
 </ul>
+
+<%= will_paginate %>
